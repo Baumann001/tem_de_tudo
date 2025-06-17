@@ -1,4 +1,5 @@
 function comprar() {
-  alert("Você será redirecionado para o site do produto.");
+  alert("Você será redirecionado para a página do produto.");
   window.location.href = "https://seulinkdeafiliado.com";
 }
+
