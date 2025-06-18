@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Produto Afiliado</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Afiliado Shopee</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,29 +12,58 @@
     <img src="TEM DE TUDO!.png" alt="Logo do Site">
   </div>
 
- 
+  <div class="aviso">
+    <h2>🛍️ Você está sendo redirecionado para a Shopee!</h2>
+    <p>Esta página faz parte do programa de afiliados da Shopee. Ao clicar nos links de produtos aqui, você será levado diretamente para o site oficial da Shopee, onde poderá concluir sua compra com segurança e confiança.<br><br>
+    👉 Clique no botão ou produto abaixo para ir direto para a oferta!</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tablink active" onclick="openTab(event, 'brinquedos')">Brinquedos</button>
+    <button class="tablink" onclick="openTab(event, 'tecnologia')">Tecnologia</button>
+    <button class="tablink" onclick="openTab(event, 'decoracao')">Decoração</button>
+  </div>
+
   <main>
-    <div class="produto">
-      <img src="relogio" alt="Produto">
-      <h2>Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX</h2>
-      <p>Este produto é incrível! Melhore sua vida com esta solução maravilhosa e aprovada por milhares de pessoas.</p>
-      <button onclick="comprar()">Comprar Agora</button>
+    <div id="brinquedos" class="tabcontent" style="display: block;">
+      <div class="produto">
+        <img src="brinquedo.jpg" alt="Brinquedo Educativo">
+        <h2>Blocos de Montar Criativos</h2>
+        <p>Ideal para desenvolver a criatividade das crianças!</p>
+        <button onclick="comprar('https://s.shopee.com.br/3VYaKDcP2O')">Comprar Agora</button>
+      </div>
     </div>
 
+    <div id="tecnologia" class="tabcontent">
+      <div class="produto">
+        <img src="relogio.jpg" alt="Relógio">
+        <h2>Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX</h2>
+        <p>Este produto é incrível! Melhore sua vida com esta solução maravilhosa e aprovada por milhares de pessoas.</p>
+        <button onclick="comprar('https://s.shopee.com.br/4VR8GxlqAJ')">Comprar Agora</button>
+      </div>
 
+      <div class="produto">
+        <img src="mousepad.jpg" alt="Mouse Pad Dragão Chinês">
+        <h2>Mouse Pad Gamer Profissional Dragão Chines Japonês 70x35cm Desk Pad Speed 1856</h2>
+        <p>Este produto é incrível! Melhore sua vida com esta solução maravilhosa e aprovada por milhares de pessoas.</p>
+        <button onclick="comprar('https://s.shopee.com.br/3VYaKDcP2O')">Comprar Agora</button>
+      </div>
 
-    <div class="produto">
-      <img src="mouse pad dragao chines" alt="Produto">
-      <h2>Mouse Pad Gamer Profissional Dragão Chines Japonês 70x35cm Desk Pad Speed 1856</h2>
-      <p>Este produto é incrível! Melhore sua vida com esta solução maravilhosa e aprovada por milhares de pessoas.</p>
-      <button onclick="comprar()">Comprar Agora</button>
+      <div class="produto">
+        <img src="camera.jpg" alt="Câmera de Segurança">
+        <h2>Kit Câmera Segurança 360 Infravermelho Sem Fio Wifi</h2>
+        <p>Este produto é incrível! Melhore sua vida com esta solução maravilhosa e aprovada por milhares de pessoas.</p>
+        <button onclick="comprar('https://s.shopee.com.br/4fkYU1fQ4O')">Comprar Agora</button>
+      </div>
     </div>
 
-    <div class="produto">
-      <img src="camera" alt="Produto">
-      <h2>Kit Câmera Segurança 360 Infravermelho Sem Fio Wifi</h2>
-      <p>Este produto é incrível! Melhore sua vida com esta solução maravilhosa e aprovada por milhares de pessoas.</p>
-      <button onclick="comprar()">Comprar Agora</button>
+    <div id="decoracao" class="tabcontent">
+      <div class="produto">
+        <img src="decoracao.jpg" alt="Luminária LED">
+        <h2>Luminária LED de Mesa</h2>
+        <p>Perfeita para deixar seu ambiente mais bonito e aconchegante.</p>
+        <button onclick="comprar('https://s.shopee.com.br/4VR8GxlqAJ')">Comprar Agora</button>
+      </div>
     </div>
   </main>
 
@@ -45,3 +74,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
