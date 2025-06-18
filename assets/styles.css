@@ -1,4 +1,20 @@
 /* Estilos Gerais */
+.branding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.branding img {
+    max-width: 500px;  /* Reduz o tamanho da logo */
+    height: auto;
+}
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,8 +30,8 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color:black;
     padding: 15px 0;
     text-align: center;
 }
@@ -37,14 +53,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
 /* Seção Hero */
 .hero-section {
-    background-color: #f0f0f0;
+    background-color:white;
     padding: 50px 20px;
     text-align: center;
 }
