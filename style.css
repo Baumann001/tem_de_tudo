@@ -54,7 +54,11 @@ body {
 
 .tabcontent {
   display: none;
-  padding: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   animation: fadeEffect 0.5s;
 }
 
@@ -92,7 +96,11 @@ main {
 }
 
 .produto p {
-  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 15px;
+  white-space: normal; /* para quebrar linha normalmente */
 }
 
 button {
@@ -115,5 +123,11 @@ footer {
   padding: 20px;
   background: #ecf0f1;
   margin-top: 30px;
+}
+.produto h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
